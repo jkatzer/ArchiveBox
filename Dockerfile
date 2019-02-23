@@ -4,7 +4,7 @@ LABEL maintainer="Nick Sweeting <archivebox-git@sweeting.me>"
 RUN apt-get update \
     && apt-get install -yq --no-install-recommends \
         git wget curl youtube-dl gnupg2 libgconf-2-4 python3 python3-pip \
-        ffmpeg avprobe \
+        ffmpeg avconv \
     && rm -rf /var/lib/apt/lists/*
 
 # Install latest chrome package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
